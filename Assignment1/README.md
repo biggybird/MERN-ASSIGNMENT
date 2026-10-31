@@ -1,24 +1,25 @@
 Assignment 1: Personal Portfolio Website
 
-Objective
+This assignment is my first step towards building a personal portfolio using HTML. The website brings together my introduction, education, skills, projects, and contact information in one place.
 
-Build a personal portfolio website using HTML, applying the concepts learned so far. The portfolio will act as a real personal profile and will be improved throughout the semester.
+Features
 
-Implementation Stages
+- Personal introduction and profile photo
+- Skills divided into proficient and currently learning
+- Education and course details
+- College and course information using unordered, ordered, and description lists
+- Projects with descriptions and links to their GitHub repositories
+- Embedded project previews using HTML iframes
+- Social media and contact information
+- Navigation bar with internal section links
 
-1. Basic HTML Page: Add a title, headings (H1 to H3), and paragraphs.
-2. Resume Content: Include About Me, Skills, Education, Projects, and Contact sections.
-3. Semantic HTML: Use semantic elements such as "header", "nav", "main", "section", "article", and "footer".
-4. Internal Navigation: Create a navigation bar with links to different sections using IDs.
-5. HTML Lists: Add a College/Course section using unordered, ordered, and description lists.
-6. Images: Add a profile photo and at least one additional image, with meaningful alt text.
-7. Meta Tags: Include charset, viewport, description, and author metadata.
+Technologies Used
 
-Goal
+- HTML5
+- Basic CSS
 
-Practise HTML fundamentals by building a structured, accessible, and functional personal portfolio website.
+What I Learned
 
----
+Through this assignment, I practised HTML fundamentals, semantic structure, navigation links, different types of lists, images, metadata, and embedding external webpages.
 
-Assignment: 1
-Subject: MERN Stack Development
+This is an early version of my portfolio, and I look forward to improving it as I learn more about web development.
