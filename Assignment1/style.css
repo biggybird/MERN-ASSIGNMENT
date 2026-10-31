@@ -1,0 +1,19 @@
+html{
+ font-size: 14px;
+}
+body{background-color: black;
+    color: whitesmoke;
+    }
+a{
+  color:rgb(210,1,100);
+}
+a:visited{
+  color:rgb(0,170,100);
+}
+a:hover,a:active{
+  color:pink;
+}
+img {
+  width: 40%;     /* Scales to fill the width of its parent container */
+  height: auto;    /* Automatically adjusts height to prevent distortion */
+}
