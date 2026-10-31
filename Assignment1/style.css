@@ -32,3 +32,25 @@ h4{
 h5{
   font-size: 1.5em;
 }
+details {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+summary:hover {
+    color: green;
+}
+
+iframe {
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+}
