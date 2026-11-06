@@ -3,83 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Timetable</title>
-    <!-- Link to the external CSS file -->
+    <title>Library Inventory</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="table-container">
-        <table>
-            <caption>Fall 2024 - Computer Science Timetable</caption>
-            
-            <thead>
-                <tr>
-                    <!-- Requirement: Use of colspan -->
-                    <th scope="col" colspan="2">Time & Day</th>
-                    <th scope="col">Monday</th>
-                    <th scope="col">Tuesday</th>
-                    <th scope="col">Wednesday</th>
-                    <th scope="col">Thursday</th>
-                    <th scope="col">Friday</th>
-                </tr>
-            </thead>
-            
-            <tbody>
-                <tr>
-                    <!-- Requirement: Use of rowspan -->
-                    <th scope="rowgroup" rowspan="2">Morning<br><small>09:00 - 12:00</small></th>
-                    <th scope="row">09:00 - 10:30</th>
-                    <td>Data Structures</td>
-                    <td>Web Dev</td>
-                    <td>Data Structures</td>
-                    <td>Web Dev</td>
-                    <td>Algorithms</td>
-                </tr>
-                <tr>
-                    <th scope="row">10:45 - 12:00</th>
-                    <td>Database</td>
-                    <td>Algorithms</td>
-                    <td>Networks</td>
-                    <td>Database</td>
-                    <td>Networks</td>
-                </tr>
-                <tr>
-                    <!-- Second Use of rowspan -->
-                    <th scope="rowgroup" rowspan="2">Afternoon<br><small>13:00 - 16:00</small></th>
-                    <th scope="row">13:00 - 14:30</th>
-                    <td>Networks</td>
-                    <td>Algorithms</td>
-                    <td>Web Dev</td>
-                    <td>Algorithms</td>
-                    <td>Database</td>
-                </tr>
-                <tr>
-                    <th scope="row">14:45 - 16:00</th>
-                    <td>Web Dev</td>
-                    <td>Networks</td>
-                    <td>Database</td>
-                    <td>Networks</td>
-                    <td>Data Structures</td>
-                </tr>
-                <tr>
-                    <!-- Second Use of colspan -->
-                    <th scope="row" colspan="2">Evening (Optional)</th>
-                    <td>Study Hall</td>
-                    <td>Lab Work</td>
-                    <td>Study Hall</td>
-                    <td>Lab Work</td>
-                    <td>Club Activity</td>
-                </tr>
-            </tbody>
-            
-            <tfoot>
-                <tr>
-                    <!-- Third Use of colspan -->
-                    <td colspan="7">Total Credit Hours: 15 &bull; Total Classes: 15 &bull; Designed for B.Tech Year 1</td>
-                </tr>
-            </tfoot>
-        </table>
+    <div class="container">
+
+        <p class="tag">HTML & CSS / ASSIGNMENT 04</p>
+
+        <h1>Library Inventory</h1>
+
+        <p class="description">
+            A complete list of books available in our college library.
+        </p>
+
+        <h2>College Library - Book Collection</h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <caption>Library Book Inventory - 20 Books</caption>
+
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">No.</th>
+                        <th rowspan="2" scope="col">Category</th>
+                        <th rowspan="2" scope="col">Book Title</th>
+                        <th rowspan="2" scope="col">Author</th>
+                        <th rowspan="2" scope="col">Genre</th>
+                        <th colspan="2" scope="colgroup">Stock Details</th>
+                        <th colspan="3" scope="colgroup">Book Information</th>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Total</th>
+                        <th scope="col">Available</th>
+                        <th scope="col">Shelf</th>
+                        <th scope="col">Rating</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- TECHNOLOGY -->
+                    <tr>
+                        <td>01</td>
+                        <th rowspan="5" scope="rowgroup">Technology</th>
+                        <td>Clean Code</td>
+                        <td>Robert Martin</td>
+                        <td>Programming</td>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>A1</td>
+                        <td>4.8</td>
+                        <td>₹650</td>
+                    </tr>
+
+                    <tr>
+                        <td>02</td>
+                        <td>Python Basics</td>
+                        <td>R. Nageswara</td>
+                        <td>Programming</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>A1</td>
+                        <td>4.5</td>
+                        <td>₹420</td>
+                    </tr>
+
+                    <tr>
+                        <td>03</td>
+                        <td>Java Complete</td>
+                        <td>Herbert Schildt</td>
+                        <td>Programming</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>A2</td>
+                        <td>4.6</td>
+                        <td>₹590</td>
+                    </tr>
+
+                    <tr>
+                        <td>04</td>
+                        <td>Computer Networks</td>
+                        <td>Andrew Tanenbaum</td>
+                        <td>Networking</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>A2</td>
+                        <td>4.4</td>
+                        <td>₹720</td>
+                    </tr>
+
+                    <tr>
+                        <td>05</td>
+                        <td>Web Design</td>
+                        <td>Jon Duckett</td>
+                        <td>Web</td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>A3</td>
+                        <td>4.7</td>
+                        <td>₹550</td>
+                    </tr>
+
+                    <!-- SCIENCE -->
+                    <tr>
+                        <td>06</td>
+                        <th rowspan="5" scope="rowgroup">Science</th>
+                        <td>A Brief History of Time</td>
+                        <td>Stephen Hawking</td>
+                        <td>Physics</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>B1</td>
+                        <td>4.9</td>
+                        <td>₹399</td>
+                    </tr>
+
+                    <tr>
+                        <td>07</td>
+                        <td>The Selfish Gene</td>
+                        <td>Richard Dawkins</td>
+                        <td>Biology</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>B1</td>
+                        <td>4.6</td>
+                        <td>₹480</td>
+                    </tr>
+
+                    <tr>
+                        <td>08</td>
+                        <td>Cosmos</td>
+                        <td>Carl Sagan</td>
+                        <td>Astronomy</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>B2</td>
+                        <td>4.8</td>
+                        <td>₹520</td>
+                    </tr>
+
+                    <tr>
+                        <td>09</td>
+                        <td>Concepts of Physics</td>
+                        <td>H. C. Verma</td>
+                        <td>Physics</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>B2</td>
+                        <td>4.7</td>
+                        <td>₹610</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>Origin of Species</td>
+                        <td>Charles Darwin</td>
+                        <td>Biology</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>B3</td>
+                        <td>4.5</td>
+                        <td>₹350</td>
+                    </tr>
+
+                    <!-- LITERATURE -->
+                    <tr>
+                        <td>11</td>
+                        <th rowspan="5" scope="rowgroup">Literature</th>
+                        <td>The Alchemist</td>
+                        <td>Paulo Coelho</td>
+                        <td>Fiction</td>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>C1</td>
+                        <td>4.6</td>
+                        <td>₹299</td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td>Animal Farm</td>
+                        <td>George Orwell</td>
+                        <td>Fiction</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>C1</td>
+                        <td>4.7</td>
+                        <td>₹250</td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td>Wings of Fire</td>
+                        <td>A. P. J. Abdul Kalam</td>
+                        <td>Autobiography</td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>C2</td>
+                        <td>4.9</td>
+                        <td>₹320</td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td>1984</td>
+                        <td>George Orwell</td>
+                        <td>Fiction</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>C2</td>
+                        <td>4.8</td>
+                        <td>₹375</td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td>Gitanjali</td>
+                        <td>Rabindranath Tagore</td>
+                        <td>Poetry</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>C3</td>
+                        <td>4.4</td>
+                        <td>₹220</td>
+                    </tr>
+
+                    <!-- BUSINESS -->
+                    <tr>
+                        <td>16</td>
+                        <th rowspan="5" scope="rowgroup">Business</th>
+                        <td>Rich Dad Poor Dad</td>
+                        <td>Robert Kiyosaki</td>
+                        <td>Finance</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>D1</td>
+                        <td>4.5</td>
+                        <td>₹399</td>
+                    </tr>
+
+                    <tr>
+                        <td>17</td>
+                        <td>Psychology of Money</td>
+                        <td>Morgan Housel</td>
+                        <td>Finance</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>D1</td>
+                        <td>4.9</td>
+                        <td>₹450</td>
+                    </tr>
+
+                    <tr>
+                        <td>18</td>
+                        <td>Atomic Habits</td>
+                        <td>James Clear</td>
+                        <td>Self-help</td>
+                        <td>9</td>
+                        <td>5</td>
+                        <td>D2</td>
+                        <td>4.8</td>
+                        <td>₹499</td>
+                    </tr>
+
+                    <tr>
+                        <td>19</td>
+                        <td>Think and Grow Rich</td>
+                        <td>Napoleon Hill</td>
+                        <td>Business</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>D2</td>
+                        <td>4.3</td>
+                        <td>₹310</td>
+                    </tr>
+
+                    <tr>
+                        <td>20</td>
+                        <td>Zero to One</td>
+                        <td>Peter Thiel</td>
+                        <td>Business</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>D3</td>
+                        <td>4.6</td>
+                        <td>₹425</td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="5" scope="row">
+                            Total Books in Collection
+                        </th>
+                        <td>139</td>
+                        <td>76</td>
+                        <td colspan="3">Library Inventory Summary</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </div>
     </div>
 
 </body>
