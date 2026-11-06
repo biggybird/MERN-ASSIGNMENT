@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Timetable</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="table-container">
+        <table>
+            <caption>Fall 2024 - Computer Science Timetable</caption>
+            
+            <thead>
+                <tr>
+                    <!-- Requirement: Use of colspan -->
+                    <th scope="col" colspan="2">Time & Day</th>
+                    <th scope="col">Monday</th>
+                    <th scope="col">Tuesday</th>
+                    <th scope="col">Wednesday</th>
+                    <th scope="col">Thursday</th>
+                    <th scope="col">Friday</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <!-- Requirement: Use of rowspan -->
+                    <th scope="rowgroup" rowspan="2">Morning<br><small>09:00 - 12:00</small></th>
+                    <th scope="row">09:00 - 10:30</th>
+                    <td>Data Structures</td>
+                    <td>Web Dev</td>
+                    <td>Data Structures</td>
+                    <td>Web Dev</td>
+                    <td>Algorithms</td>
+                </tr>
+                <tr>
+                    <th scope="row">10:45 - 12:00</th>
+                    <td>Database</td>
+                    <td>Algorithms</td>
+                    <td>Networks</td>
+                    <td>Database</td>
+                    <td>Networks</td>
+                </tr>
+                <tr>
+                    <!-- Second Use of rowspan -->
+                    <th scope="rowgroup" rowspan="2">Afternoon<br><small>13:00 - 16:00</small></th>
+                    <th scope="row">13:00 - 14:30</th>
+                    <td>Networks</td>
+                    <td>Algorithms</td>
+                    <td>Web Dev</td>
+                    <td>Algorithms</td>
+                    <td>Database</td>
+                </tr>
+                <tr>
+                    <th scope="row">14:45 - 16:00</th>
+                    <td>Web Dev</td>
+                    <td>Networks</td>
+                    <td>Database</td>
+                    <td>Networks</td>
+                    <td>Data Structures</td>
+                </tr>
+                <tr>
+                    <!-- Second Use of colspan -->
+                    <th scope="row" colspan="2">Evening (Optional)</th>
+                    <td>Study Hall</td>
+                    <td>Lab Work</td>
+                    <td>Study Hall</td>
+                    <td>Lab Work</td>
+                    <td>Club Activity</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <!-- Third Use of colspan -->
+                    <td colspan="7">Total Credit Hours: 15 &bull; Total Classes: 15 &bull; Designed for B.Tech Year 1</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>
