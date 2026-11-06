@@ -1,0 +1,178 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf4f7;
+    color: #263c4b;
+    padding: 25px;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+
+/* 01. GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* 02. PRODUCT GRID */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.product {
+    background-color: #f8fbfa;
+    border: 1px solid #d2dadd;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 100px;
+}
+
+.product h3 {
+    margin-bottom: 12px;
+}
+
+.product p {
+    font-size: 14px;
+}
+
+
+/* 03. DASHBOARD */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: #174448;
+    color: white;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #d9e7e5;
+    padding: 20px;
+    line-height: 25px;
+}
+
+aside h3 {
+    margin-bottom: 15px;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+    padding: 20px;
+    min-height: 300px;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.dash-card {
+    background-color: #f2f7f6;
+    border: 1px solid #d2dadd;
+    border-radius: 7px;
+    padding: 15px;
+    min-height: 90px;
+}
+
+.dash-card p {
+    margin-top: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #174448;
+    color: white;
+    padding: 15px;
+}
+
+
+/* HOME LINK */
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
