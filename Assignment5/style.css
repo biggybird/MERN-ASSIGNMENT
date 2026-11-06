@@ -1,0 +1,422 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f5;
+    color: #263d3b;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header and Navigation */
+
+header {
+    background-color: #173f42;
+    color: white;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow: auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    float: right;
+    margin-top: 5px;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #c8d9a5;
+}
+
+
+/* Hero Section */
+
+.hero {
+    height: 450px;
+    background-image:
+        url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1600");
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+/* Dark overlay using positioning */
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 40, 35, 0.72);
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.small-heading {
+    color: #d4e4b5;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #237c70;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #c8d9a5;
+    color: #173f42;
+}
+
+
+/* Common Section Styling */
+
+.section {
+    padding: 55px 7%;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #173f42;
+}
+
+.section-description {
+    color: #687875;
+    margin-bottom: 25px;
+}
+
+
+/* About Section */
+
+.about {
+    background-color: white;
+    text-align: center;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 15px auto 0;
+    color: #687875;
+}
+
+
+/* Services Section */
+
+.services {
+    background-color: #edf3ef;
+}
+
+.card-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Common card styling */
+
+.card {
+    display: inline-block;
+    width: 30%;
+    min-height: 150px;
+    padding: 25px;
+    margin: 1%;
+    text-align: left;
+    vertical-align: top;
+    background-color: white;
+    overflow: hidden;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #173f42;
+}
+
+.card p {
+    font-size: 14px;
+    color: #687875;
+}
+
+/* Card Variant 1 */
+
+.card-one {
+    border: 1px solid #cbdad5;
+    border-radius: 12px;
+}
+
+/* Card Variant 2 */
+
+.card-two {
+    border: 3px solid #d9b86c;
+    border-radius: 3px;
+    background-color: #fffdf6;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Variant 3 */
+
+.card-three {
+    border: 2px solid #668b82;
+    border-radius: 0;
+    background-color: #f4f8f6;
+}
+
+
+/* Gallery Section */
+
+.gallery {
+    background-color: white;
+    text-align: center;
+}
+
+.gallery-item {
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    margin: 1%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #dce6e2;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Testimonial */
+
+.testimonial {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #e3eee8;
+    border-left: 5px solid #237c70;
+    border-radius: 5px;
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    color: #237c70;
+}
+
+
+/* Contact Section */
+
+.contact {
+    background-color: #edf3ef;
+}
+
+.contact > p {
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 650px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dce6e2;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aabbb5;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #237c70;
+    border-color: #237c70;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 18px;
+    padding: 12px 25px;
+    background-color: #237c70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form button:hover {
+    background-color: #173f42;
+}
+
+.address {
+    margin-top: 25px;
+    color: #687875;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #173f42;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h3 {
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #d5e3de;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #c8d9a5;
+}
+
+.copyright {
+    border-top: 1px solid #41615e;
+    padding-top: 15px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+
+    .logo {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links {
+        float: none;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content {
+        left: 6%;
+        right: 6%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .card,
+    .gallery-item {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .gallery-item {
+        height: 220px;
+    }
+
+    .section {
+        padding: 40px 6%;
+    }
+}
