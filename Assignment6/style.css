@@ -232,3 +232,14 @@ body {
     }
 
 }
+.card a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #187477;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
